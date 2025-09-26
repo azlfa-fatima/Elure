@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GLAMOUR</title>
+    <link rel="icon" href="favicon.png" type="image/png">
+  <!-- Title & Description -->
+<meta name="description" content="GLAMOUR Magazine covers the latest in fashion, beauty, lifestyle, and celebrity trends. Stay stylish and informed with our curated issues.">
+<meta name="keywords" content="fashion, beauty, lifestyle, magazine, celebrity trends, GLAMOUR">
+<meta name="author" content="Azlfa Fatima">
+<style>
+/* Base */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: 'Georgia', serif; background: #fff; color: #000; line-height: 1.6; }
+a { text-decoration: none; color: inherit; }
+
+/* Header Vogue Style */
+header {
+  text-align: center;
+  padding: 2rem 1rem;
+  border-bottom: 1px solid #eaeaea;
+}
+
+.logo {
+  width: 300px;        /* Wider for impact */
+  height: auto;        /* Keep aspect ratio */
+  display: block;      /* Centers the image */
+  margin: 0 auto;      /* Horizontally center */
+  padding: 10px 0;     /* Space above and below */
+  object-fit: contain; /* Ensures image scales properly */
+}
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+nav a {
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  padding-bottom: 3px;
+}
+nav a:hover { 
+  border-bottom: 1px solid #000; 
+}
+
+
+.faq {
+  font-family: 'Didot', serif;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 60px 20px;
+  color: #000;
+  background-color: #fff;
+}
+
+.faq h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: bold;
+  letter-spacing: 2px;
+  margin-bottom: 40px;
+}
+
+details {
+  border-bottom: 1px solid #e0e0e0;
+  padding: 15px 0;
+}
+
+summary {
+  font-size: 1.2rem;
+  font-weight: 600;
+  cursor: pointer;
+  outline: none;
+  list-style: none;
+}
+
+summary:hover {
+  color: #000;
+}
+
+details[open] summary {
+  color: #444;
+}
+
+details p {
+  margin-top: 10px;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+
+/* Footer */
+.footer {
+  background: #000;
+  color: #fff;
+  padding: 3rem 2rem 1rem;
+  font-family: 'Georgia', serif;
+}
+
+.footer-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.footer-column h3 {
+  font-family: 'Didot', serif;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-column ul li {
+  margin-bottom: 0.5rem;
+}
+
+.footer-column ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 0.85rem;
+  transition: opacity 0.3s ease;
+}
+
+.footer-column ul li a:hover {
+  opacity: 0.6;
+}
+
+.footer-bottom {
+  border-top: 1px solid #333;
+  text-align: center;
+  padding-top: 1rem;
+  font-size: 0.8rem;
+  opacity: 0.7;
+}
+
+
+
+
+
+</style>
+</head>
+<body>
+
+<!-- Header -->
+  <header>
+  <a href="home.html"> 
+    <img src="logo.png" alt="GLAMOUR Logo" class="logo">
+  </a>
+    <nav>
+      <a href="About.html">About</a>
+      <a href="Issues.html">Issues</a>
+      <a href="Submit.html">Submit</a>
+      <a href="Contactus.html">Contact Us</a>
+    </nav>
+  </header>
+
+
+  <section class="faq">
+  <div class="container">
+    <h2>Frequently Asked Questions</h2>
+
+    <details>
+      <summary>1. What is your magazine about?</summary>
+      <p>Our magazine covers the latest trends in fashion, beauty, lifestyle, and celebrity news, providing readers with a curated, stylish experience.</p>
+    </details>
+
+    <details>
+      <summary>2. How can I subscribe?</summary>
+      <p>You can subscribe to our newsletter via the subscription form. Stay updated with monthly issues and exclusive content.</p>
+    </details>
+
+    <details>
+      <summary>3. Can I submit my work?</summary>
+      <p>Yes! Writers, photographers, and artists can submit their work via our contact form. Selected submissions may be featured in upcoming issues.</p>
+    </details>
+
+    <details>
+      <summary>4. How can I download past issues?</summary>
+      <p>Past issues are available in the “Monthly Issues” section. Click “Download” on the issue you want to access.</p>
+    </details>
+
+    <details>
+      <summary>5. Do you offer digital and print versions?</summary>
+      <p>Yes, our magazine is available both digitally and in print. You can select your preferred version when subscribing.</p>
+    </details>
+
+    <details>
+      <summary>6. How often is the magazine published?</summary>
+      <p>Our magazine is published monthly, with special editions released periodically throughout the year.</p>
+    </details>
+
+    <details>
+      <summary>7. How do I contact the editorial team?</summary>
+      <p>You can contact our editorial team using the contact form or by emailing us directly at writerazlfafatima@gmail.com.</p>
+    </details>
+
+    <details>
+      <summary>8. Can I advertise in your magazine?</summary>
+      <p>Yes, we offer advertising opportunities. Please contact us with your proposal and requirements.</p>
+    </details>
+
+    <details>
+      <summary>9. Is the magazine suitable for all ages?</summary>
+      <p>Yes, our content is curated to be appropriate for general audiences, but some fashion editorials may target adults.</p>
+    </details>
+
+    <details>
+      <summary>10. How can I become a contributor?</summary>
+      <p>Submit a portfolio or sample of your work via the contact form. We review all submissions carefully.</p>
+    </details>
+
+    <details>
+      <summary>11. Are there subscription fees?</summary>
+      <p>Our basic digital subscription is free, while premium print subscriptions may have a fee. Details are on the subscription page.</p>
+    </details>
+
+    <details>
+      <summary>12. Can I gift a subscription?</summary>
+      <p>Yes! You can purchase gift subscriptions for friends and family through our subscription page.</p>
+    </details>
+
+    <details>
+      <summary>13. How do I cancel my subscription?</summary>
+      <p>You can cancel your subscription at any time via the account settings or by contacting our support team.</p>
+    </details>
+
+    <details>
+      <summary>14. Can I access the magazine on mobile devices?</summary>
+      <p>Yes, our digital magazine is mobile-friendly and can be accessed via any browser on smartphones and tablets.</p>
+    </details>
+
+    <details>
+      <summary>15. Do you offer international shipping?</summary>
+      <p>Yes, print editions can be shipped internationally. Shipping fees and times vary by location.</p>
+    </details>
+
+    <details>
+      <summary>16. How can I suggest a topic?</summary>
+      <p>You can submit topic suggestions via our contact form. We welcome ideas from our readers.</p>
+    </details>
+
+    <details>
+      <summary>17. Can I share articles from the magazine?</summary>
+      <p>Yes, you may share links to our articles online, but copying content directly is prohibited without permission.</p>
+    </details>
+
+    <details>
+      <summary>18. Are there exclusive members-only articles?</summary>
+      <p>Yes, premium subscribers have access to exclusive content not available in the free version.</p>
+    </details>
+
+    <details>
+      <summary>19. How do I report an issue with the website?</summary>
+      <p>Contact our support team through the contact form with details of the issue, and we will resolve it promptly.</p>
+    </details>
+
+    <details>
+      <summary>20. Can I collaborate with your team on special projects?</summary>
+      <p>Yes, we encourage collaboration with talented creators. Reach out via our contact form with your proposal.</p>
+    </details>
+
+  </div>
+</section>
+
+
+
+
+
+
+
+
+   <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-container">
+      <!-- Column 1 -->
+      <div class="footer-column">
+        <h3>About</h3>
+        <ul>
+          <li><a href="About.html">Our Story</a></li>
+          <li><a href="#">Editorial Team</a></li>
+          <li><a href="#">Careers</a></li>
+        </ul>
+      </div>
+
+      <!-- Column 2 -->
+      <div class="footer-column">
+        <h3>Explore</h3>
+        <ul>
+          <li><a href="Issues.html">Latest Issues</a></li>
+          <li><a href="About.html">Features</a></li>
+          <li><a href="#">Interviews</a></li>
+          <li><a href="#">Archive</a></li>
+        </ul>
+      </div>
+
+      <!-- Column 3 -->
+      <div class="footer-column">
+        <h3>Support</h3>
+        <ul>
+          <li><a href="Contactus.html">Contact</a></li>
+          <li><a href="#">Advertise</a></li>
+          <li><a href="faq.html">FAQs</a></li>
+        </ul>
+      </div>
+
+      <!-- Column 4 -->
+      <div class="footer-column">
+        <h3>Legal</h3>
+        <ul>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Terms of Use</a></li>
+          <li><a href="#">Cookie Policy</a></li>
+        </ul>
+      </div>
+
+      <!-- Column 5 -->
+      <div class="footer-column">
+        <h3>Follow Us</h3>
+        <ul>
+          <li><a href="https://www.instagram.com/glimmerofwords/?__pwa=1">Instagram</a></li>
+          <li><a href="#">TikTok</a></li>
+          <li><a href="#">Twitter</a></li>
+          <li><a href="https://www.youtube.com/@glimmerofwords">YouTube</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; 2025 GLAMOUR. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+
+
+
+</body>
+</html>

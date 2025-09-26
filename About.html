@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GLAMOUR</title>
+  <link rel="icon" href="favicon.png" type="image/png">
+  <!-- Title & Description -->
+<meta name="description" content="GLAMOUR Magazine covers the latest in fashion, beauty, lifestyle, and celebrity trends. Stay stylish and informed with our curated issues.">
+<meta name="keywords" content="fashion, beauty, lifestyle, magazine, celebrity trends, GLAMOUR">
+<meta name="author" content="Azlfa Fatima">
+
+  <style>
+    /* Base */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: 'Georgia', serif; background: #fff; color: #000; line-height: 1.6; }
+a { text-decoration: none; color: inherit; }
+
+/* Header Vogue Style */
+header {
+  text-align: center;
+  padding: 2rem 1rem;
+  border-bottom: 1px solid #eaeaea;
+}
+.logo {
+  width: 300px;        /* Wider for impact */
+  height: auto;        /* Keep aspect ratio */
+  display: block;      /* Centers the image */
+  margin: 0 auto;      /* Horizontally center */
+  padding: 10px 0;     /* Space above and below */
+  object-fit: contain; /* Ensures image scales properly */
+}
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+nav a {
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  padding-bottom: 3px;
+}
+nav a:hover { 
+  border-bottom: 1px solid #000; 
+}
+
+
+/* About Page */
+.about {
+  padding: 6rem 2rem;
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.about h1 {
+  font-family: 'Didot', serif;
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+.about p {
+  font-size: 1.05rem;
+  line-height: 1.9;
+  margin-bottom: 1.5rem;
+  font-family: 'Georgia', serif;
+}
+
+
+/* About Section */
+.about {
+  padding: 6rem 2rem;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.about-container {
+  text-align: center;
+}
+
+.about h1 {
+  font-family: 'Didot', serif;
+  font-size: 2.5rem;
+  margin-bottom: 3rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+.about-block {
+  margin-bottom: 3rem;
+}
+
+.about-block h2 {
+  font-family: 'Didot', serif;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 400;
+}
+
+.about-block p {
+  font-size: 1.05rem;
+  line-height: 1.9;
+  font-family: 'Georgia', serif;
+  max-width: 750px;
+  margin: 0 auto;
+}
+
+
+
+/* Newsletter Section */
+.newsletter {
+  background: #fff;
+  color: #000;
+  text-align: center;
+  padding: 4rem 2rem;
+  border-top: 1px solid #000;
+}
+.newsletter h2 {
+  font-family: 'Didot', serif;
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  font-weight: 400;
+}
+.newsletter p {
+  font-size: 1rem;
+  margin-bottom: 1.5rem;
+  font-style: italic;
+}
+.newsletter form {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+.newsletter input {
+  padding: 0.7rem 1rem;
+  border: 1px solid #000;
+  font-size: 0.9rem;
+  width: 250px;
+  max-width: 90%;
+  font-family: 'Georgia', serif;
+}
+.newsletter button {
+  padding: 0.7rem 1.2rem;
+  background: #000;
+  color: #fff;
+  border: none;
+  text-transform: uppercase;
+  font-size: 0.85rem;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+.newsletter button:hover {
+  background: #444;
+}
+
+/* Footer */
+.footer {
+  background: #000;
+  color: #fff;
+  padding: 3rem 2rem 1rem;
+  font-family: 'Georgia', serif;
+}
+
+.footer-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.footer-column h3 {
+  font-family: 'Didot', serif;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-column ul li {
+  margin-bottom: 0.5rem;
+}
+
+.footer-column ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 0.85rem;
+  transition: opacity 0.3s ease;
+}
+
+.footer-column ul li a:hover {
+  opacity: 0.6;
+}
+
+.footer-bottom {
+  border-top: 1px solid #333;
+  text-align: center;
+  padding-top: 1rem;
+  font-size: 0.8rem;
+  opacity: 0.7;
+}
+
+
+
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+  <a href="home.html"> 
+    <img src="logo.png" alt="GLAMOUR Logo" class="logo">
+  </a>
+    <nav>
+      <a href="About.html">About</a>
+      <a href="Issues.html">Issues</a>
+      <a href="Submit.html">Submit</a>
+      <a href="Contactus.html">Contact Us</a>
+    </nav>
+  </header>
+
+
+
+<!-- About Section -->
+<section class="about">
+  <div class="about-container">
+    <h1>About Us</h1>
+    <p>
+      <em>GLAMOUR</em> is an independent teen magazine dedicated to 
+      celebrating creativity, expression, and voices of our generation. 
+      From art and fiction to fashion, mental health, and world issues — 
+      every page reflects the spark and struggles of youth today.
+    </p>
+    <p>
+      Started by young writers and dreamers, our magazine provides a 
+      platform where teens from around the world can contribute 
+      their poetry, essays, photography, and stories. We believe 
+      that every teen has a story worth telling.
+    </p>
+    <p>
+      Each monthly issue is a mirror of teen life — unfiltered, bold, 
+      and deeply authentic. Join us as we create a space that’s not 
+      only about reading, but about belonging.
+    </p>
+  </div>
+</section>
+
+
+<!-- About Section -->
+<section class="about">
+  <div class="about-container">
+<h1>We Work On</h1>
+
+    <div class="about-block">
+      <h2>Youth Voice</h2>
+      <p>
+        We believe in the power of storytelling. Whether it’s poetry, essays, or personal reflections, our magazine amplifies the voices of teens worldwide. Here, every story counts — the loud, the quiet, the bold, and the unspoken.
+      </p>
+    </div>
+
+    <div class="about-block">
+      <h2>Wellness & Identity</h2>
+      <p>
+        Growing up is messy, beautiful, and sometimes overwhelming. That’s why we dedicate space to mental health, self-discovery, and personal growth. From navigating school pressure to embracing identity, our wellness section is a safe corner for honesty and healing.
+      </p>
+    </div>
+
+    <div class="about-block">
+      <h2>Entertainment & Culture</h2>
+      <p>
+        From music that moves us to shows that define us, we dive into what’s trending — and what’s timeless. Expect thoughtful reviews, interviews with rising teen creators, and fresh takes on the pop culture shaping our world.
+      </p>
+    </div>
+
+    <div class="about-block">
+      <h2>Fashion & Creativity</h2>
+      <p>
+        Style is expression. Art is rebellion. Creativity is freedom. <em>GLAMOUR</em> showcases teen designers, artists, and photographers who dare to push boundaries. Every page is a canvas, celebrating originality and individuality.
+      </p>
+    </div>
+
+    <div class="about-block">
+  <h2>Poetry</h2>
+  <p>
+    Words that breathe life. Our poetry section captures raw emotions, fleeting moments, and the rhythm of teenhood — unfiltered and deeply personal.
+  </p>
+</div>
+
+<div class="about-block">
+  <h2>Photography</h2>
+  <p>
+    A picture tells a thousand stories. From portraits to street captures, <em>GLAMOUR</em> showcases the world through the lens of young creatives.
+  </p>
+</div>
+
+    <div class="about-block">
+      <h2>Why We Exist</h2>
+      <p>
+        We are teens, writing for teens. Independent, unfiltered, and unapologetically authentic — this is our space to belong, create, and inspire. <em>Glimmer of Teens</em> isn’t just a magazine you read; it’s a magazine you can be part of.
+      </p>
+    </div>
+
+  </div>
+</section>
+
+
+
+
+
+
+      <!-- Newsletter Section -->
+  <section class="newsletter">
+    <h2>Subscribe to Our Newsletter</h2>
+    <p>Stay updated with the latest issues and stories from <em>GLAMOUR</em>.</p>
+    <form>
+      <input type="email" placeholder="Enter your email" required>
+      <a href="https://forms.gle/Ssb22Thdg9UUxQKt6" target="_blank">
+  <button type="button">Subscribe</button>
+</a>
+    </form>
+  </section>
+
+  
+    <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-container">
+      <!-- Column 1 -->
+      <div class="footer-column">
+        <h3>About</h3>
+        <ul>
+          <li><a href="About.html">Our Story</a></li>
+          <li><a href="#">Editorial Team</a></li>
+          <li><a href="#">Careers</a></li>
+        </ul>
+      </div>
+
+      <!-- Column 2 -->
+      <div class="footer-column">
+        <h3>Explore</h3>
+        <ul>
+          <li><a href="Issues.html">Latest Issues</a></li>
+          <li><a href="About.html">Features</a></li>
+          <li><a href="#">Interviews</a></li>
+          <li><a href="#">Archive</a></li>
+        </ul>
+      </div>
+
+      <!-- Column 3 -->
+      <div class="footer-column">
+        <h3>Support</h3>
+        <ul>
+          <li><a href="Contactus.html">Contact</a></li>
+          <li><a href="#">Advertise</a></li>
+          <li><a href="faq.html">FAQs</a></li>
+        </ul>
+      </div>
+
+      <!-- Column 4 -->
+      <div class="footer-column">
+        <h3>Legal</h3>
+        <ul>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Terms of Use</a></li>
+          <li><a href="#">Cookie Policy</a></li>
+        </ul>
+      </div>
+
+      <!-- Column 5 -->
+      <div class="footer-column">
+        <h3>Follow Us</h3>
+        <ul>
+          <li><a href="https://www.instagram.com/glimmerofwords/?__pwa=1">Instagram</a></li>
+          <li><a href="#">TikTok</a></li>
+          <li><a href="#">Twitter</a></li>
+          <li><a href="https://www.youtube.com/@glimmerofwords">YouTube</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; 2025 GLAMOUR. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+
+
+
+</body>
+</html>

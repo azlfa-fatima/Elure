@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GLAMOUR</title>
+
+  <link rel="icon" href="favicon.png" type="image/png">
+
+  <!-- Title & Description -->
+<meta name="description" content="GLAMOUR Magazine covers the latest in fashion, beauty, lifestyle, and celebrity trends. Stay stylish and informed with our curated issues.">
+<meta name="keywords" content="fashion, beauty, lifestyle, magazine, celebrity trends, GLAMOUR">
+<meta name="author" content="Azlfa Fatima">
+  <style>
+
+  
+    /* Base */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: 'Georgia', serif; background: #fff; color: #000; line-height: 1.6; }
+a { text-decoration: none; color: inherit; }
+
+/* Header Vogue Style */
+header {
+  text-align: center;
+  padding: 2rem 1rem;
+  border-bottom: 1px solid #eaeaea;
+}
+.logo {
+  width: 300px;        /* Wider for impact */
+  height: auto;        /* Keep aspect ratio */
+  display: block;      /* Centers the image */
+  margin: 0 auto;      /* Horizontally center */
+  padding: 10px 0;     /* Space above and below */
+  object-fit: contain; /* Ensures image scales properly */
+}
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+nav a {
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  padding-bottom: 3px;
+}
+nav a:hover { 
+  border-bottom: 1px solid #000; 
+}
+
+
+/* Submit Section */
+.submit {
+  background: #fff;
+  color: #000;
+  padding: 4rem 2rem;
+  border-top: 1px solid #000;
+}
+
+.submit-container {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.submit h2 {
+  font-family: 'Didot', serif;
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  font-weight: 400;
+}
+
+.submit p {
+  margin-bottom: 1.5rem;
+  font-size: 1rem;
+  line-height: 1.7;
+}
+
+.submit-guidelines, 
+.submit-how {
+  text-align: left;
+  margin: 2rem 0;
+}
+
+.submit-guidelines h3,
+.submit-how h3 {
+  font-family: 'Didot', serif;
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  font-weight: 500;
+  border-bottom: 1px solid #000;
+  display: inline-block;
+  padding-bottom: 0.2rem;
+}
+
+.submit-guidelines ul,
+.submit-how ol {
+  margin-left: 1.2rem;
+  font-size: 0.95rem;
+  line-height: 1.8;
+}
+
+.submit-note {
+  font-size: 0.9rem;
+  font-style: italic;
+  margin: 2rem 0;
+  color: #444;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.8rem 2rem;
+  background: #000;
+  color: #fff;
+  text-decoration: none;
+  font-family: 'Didot', serif;
+  font-size: 1rem;
+  border-radius: 2px;
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  background: #444;
+}
+
+
+
+
+
+/* Newsletter Section */
+.newsletter {
+  background: #fff;
+  color: #000;
+  text-align: center;
+  padding: 4rem 2rem;
+  border-top: 1px solid #000;
+}
+.newsletter h2 {
+  font-family: 'Didot', serif;
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  font-weight: 400;
+}
+.newsletter p {
+  font-size: 1rem;
+  margin-bottom: 1.5rem;
+  font-style: italic;
+}
+.newsletter form {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+.newsletter input {
+  padding: 0.7rem 1rem;
+  border: 1px solid #000;
+  font-size: 0.9rem;
+  width: 250px;
+  max-width: 90%;
+  font-family: 'Georgia', serif;
+}
+.newsletter button {
+  padding: 0.7rem 1.2rem;
+  background: #000;
+  color: #fff;
+  border: none;
+  text-transform: uppercase;
+  font-size: 0.85rem;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+.newsletter button:hover {
+  background: #444;
+}
+
+/* Footer */
+.footer {
+  background: #000;
+  color: #fff;
+  padding: 3rem 2rem 1rem;
+  font-family: 'Georgia', serif;
+}
+
+.footer-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.footer-column h3 {
+  font-family: 'Didot', serif;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-column ul li {
+  margin-bottom: 0.5rem;
+}
+
+.footer-column ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 0.85rem;
+  transition: opacity 0.3s ease;
+}
+
+.footer-column ul li a:hover {
+  opacity: 0.6;
+}
+
+.footer-bottom {
+  border-top: 1px solid #333;
+  text-align: center;
+  padding-top: 1rem;
+  font-size: 0.8rem;
+  opacity: 0.7;
+}
+
+
+</style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+  <a href="home.html"> 
+    <img src="logo.png" alt="GLAMOUR Logo" class="logo">
+  </a>
+    <nav>
+      <a href="About.html">About</a>
+      <a href="Issues.html">Issues</a>
+      <a href="Submit.html">Submit</a>
+      <a href="Contactus.html">Contact Us</a>
+    </nav>
+  </header>
+
+
+<section class="submit">
+  <div class="submit-container">
+    <h2>Submit Your Work</h2>
+    <p>
+      At <em>GLAMOUR</em>, we welcome submissions from young creatives across the globe. 
+      Whether you are a writer, artist, or photographer, this is your platform to share your voice and creativity.
+    </p>
+
+    <div class="submit-guidelines">
+      <h3>What We Accept</h3>
+      <ul>
+        <li>Poetry, Short Fiction, and Creative Writing</li>
+        <li>Articles and Essays on youth, wellness, identity, culture, and world issues</li>
+        <li>Entertainment Writing: reviews, interviews, and opinion pieces</li>
+        <li>Art and Illustrations (JPEG/PNG, high resolution)</li>
+        <li>Photography (color, black & white, or creative edits)</li>
+        <li>Fashion & Creative Styling spreads</li>
+      </ul>
+    </div>
+
+    <div class="submit-how">
+      <h3>How to Submit</h3>
+      <ol>
+        <li>Prepare your work in a clean document (Word, PDF, or JPG/PNG for visual work).</li>
+        <li>Include your <strong>name, age, country, and a short bio</strong> (2–3 sentences).</li>
+        <li>Attach your files and send them to: 
+          <a href="mailto:writerazlfafatima@gmail.com">writerazlfafatima@gmail.com</a>
+        </li>
+        <li>Use the subject line: <strong>Submission – [Your Name] – [Category]</strong></li>
+      </ol>
+    </div>
+
+    <p class="submit-note">
+      By submitting, you give us permission to feature your work in our monthly magazine 
+      and on our online platforms. All rights remain with you, the original creator.
+    </p>
+
+    <a href="https://mail.google.com/" class="btn">Submit via Email</a>
+  </div>
+</section>
+
+
+
+      <!-- Newsletter Section -->
+  <section class="newsletter">
+    <h2>Subscribe to Our Newsletter</h2>
+    <p>Stay updated with the latest issues and stories from <em>GLAMOUR</em>.</p>
+    <form>
+      <input type="email" placeholder="Enter your email" required>
+      <a href="https://forms.gle/Ssb22Thdg9UUxQKt6" target="_blank">
+  <button type="button">Subscribe</button>
+</a>
+    </form>
+  </section>
+
+  
+    <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-container">
+      <!-- Column 1 -->
+      <div class="footer-column">
+        <h3>About</h3>
+        <ul>
+          <li><a href="About.html">Our Story</a></li>
+          <li><a href="#">Editorial Team</a></li>
+          <li><a href="#">Careers</a></li>
+        </ul>
+      </div>
+
+      <!-- Column 2 -->
+      <div class="footer-column">
+        <h3>Explore</h3>
+        <ul>
+          <li><a href="Issues.html">Latest Issues</a></li>
+          <li><a href="About.html">Features</a></li>
+          <li><a href="#">Interviews</a></li>
+          <li><a href="#">Archive</a></li>
+        </ul>
+      </div>
+
+      <!-- Column 3 -->
+      <div class="footer-column">
+        <h3>Support</h3>
+        <ul>
+          <li><a href="Contactus.html">Contact</a></li>
+          <li><a href="#">Advertise</a></li>
+          <li><a href="faq.html">FAQs</a></li>
+        </ul>
+      </div>
+
+      <!-- Column 4 -->
+      <div class="footer-column">
+        <h3>Legal</h3>
+        <ul>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Terms of Use</a></li>
+          <li><a href="#">Cookie Policy</a></li>
+        </ul>
+      </div>
+
+      <!-- Column 5 -->
+      <div class="footer-column">
+        <h3>Follow Us</h3>
+        <ul>
+          <li><a href="https://www.instagram.com/glimmerofwords/?__pwa=1">Instagram</a></li>
+          <li><a href="#">TikTok</a></li>
+          <li><a href="#">Twitter</a></li>
+          <li><a href="https://www.youtube.com/@glimmerofwords">YouTube</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; 2025 GLAMOUR. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+
+
+
+</body>
+</html>
